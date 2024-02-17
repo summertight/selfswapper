@@ -263,32 +263,28 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Face swapping has gained significant attention for its
+            varied applications. The majority of previous face swapping approaches have relied on the seesaw game training
+            scheme, which often leads to the instability of the model
+            training and results in undesired samples with blended
+            identities due to the target identity leakage problem. This
+            paper introduces the Shape Agnostic Masked AutoEncoder
+            (SAMAE) training scheme, a novel self-supervised approach designed to enhance face swapping model training
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            Our training scheme addresses the limitations of traditional
+            training methods by circumventing the conventional seesaw
+            game and introducing clear ground truth through its
+            self-reconstruction training regime. It effectively mitigates
+            identity leakage by masking facial regions of the input
+            images and utilizing learned disentangled identity and
+            non-identity features. Additionally, we tackle the shape
+            misalignment problem with new techniques including
+            perforation confusion and random mesh scaling, and
+            establishes a new state-of-the-art, surpassing other baseline methods, preserving both identity and non-identity
+            attributes, without sacrificing on either aspect.
           </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p>
+         
         </div>
       </div>
     </div>
