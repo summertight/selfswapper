@@ -222,18 +222,18 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3">Key Idea</h2>
     <div class="hero-body">
-      <img id="teaser" height="100%" src="./static/images/fig_concept.pdf" type="image/png" />
-   
+      <iframe src="./static/images/fig_concept.pdf" width="100%" height="600px">
+        This browser does not support PDFs. Please download the PDF to view it: 
+        <a href="./static/images/fig_concept.pdf">Download PDF</a>.
+      </iframe>
       <h2 class="subtitle has-text-centered">
-        (A) Conceptual comparison between prior works and our method.
-        Prior works rely on a seesaw game of two potentially conflicting losses: reconstruc-
-        tion loss and identity loss. On the other hand, our method leverages a self-supervised
-        approach with a clear ground truth, which allows for more stable training. (B) Com-
-        paring our base approach (Ours Base) with our enhanced method (Ours
-        Full), which includes techniques like perforation confusion and random mesh scaling.
-        Green masks represent target-posed source 3DMM masks, red masks indicate target
-        3DMM masks, and orange masks denote their intersection. The first row shows that
-        when the source face is larger than the target’s, the jaw is cut off. The second row
+        (A) Conceptual comparison between prior works and our method. Prior works rely on a seesaw game of two potentially conflicting losses: reconstruction loss and identity loss. 
+        On the other hand, our method leverages a self-supervised approach with a clear ground truth, which allows for more stable training. 
+        
+        (B) Comparing our base approach (Ours Base) with our enhanced method (Ours Full), 
+        which includes techniques like perforation confusion and random mesh scaling. 
+        Green masks represent target-posed source 3DMM masks, red masks indicate target 3DMM masks, and orange masks denote their intersection.
+         The first row shows that when the source face is larger than the target’s, the jaw is cut off. The second row
         shows the opposite case, where the base model fails to inpaint the remaining regions
         effectively, while Ours Full generates realistic face-swapped outputs.
       </h2>
