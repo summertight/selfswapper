@@ -224,17 +224,18 @@
     <div class="hero-body">
       <img id="teaser" height="100%" src="./static/images/fig_concept.png" type="image/png" />
       <h2 class="subtitle has-text-centered">
-        <p>
-          <strong>(A) Conceptual comparison</strong> between prior works and our method. Prior works rely on a seesaw game of two potentially conflicting losses: <strong>reconstruction loss</strong> and <strong>identity loss</strong>. On the other hand, our method leverages a <strong>self-supervised approach</strong> with a clear ground truth, which allows for more stable training.
+      <p>
+          <strong>(A) Comparison with Prior Works:</strong> Prior methods balance conflicting losses: <strong>reconstruction</strong> and <strong>identity</strong>. Our approach uses a <strong>self-supervised</strong> method with a clear ground truth, leading to more stable training.
       </p>
       
       <p>
-          <strong>(B) Comparing our base approach</strong> (Ours Base) with our enhanced method (Ours Full), which includes techniques like <strong>perforation confusion</strong> and <strong>random mesh scaling</strong>. Green masks represent target-posed source 3DMM masks, red masks indicate target 3DMM masks, and orange masks denote their intersection.
+          <strong>(B) Ours Base vs. Ours Full:</strong> We compare our base model with our enhanced method, which adds <strong>perforation confusion</strong> and <strong>random mesh scaling</strong>. Green masks show source 3DMM, red masks target 3DMM, and orange masks their intersection.
       </p>
       
       <p>
-          The first row shows that when the source face is larger than the target’s, the jaw is cut off. The second row shows the opposite case, where the base model fails to inpaint the remaining regions effectively, while <strong>Ours Full</strong> generates realistic face-swapped outputs.
+          When the source face is larger, the base model cuts off the jaw, and when smaller, it fails to fill in gaps. <strong>Ours Full</strong> solves both, generating realistic results.
       </p>
+      
       
       </h2>
      
